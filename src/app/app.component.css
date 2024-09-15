@@ -1,0 +1,49 @@
+/* Styles for the form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  /* Styles for form labels */
+  label {
+    margin-top: 1em;
+    display: red;
+  }
+  
+  /* Styles for form inputs */
+  input {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+  }
+  
+  /* Styles for error messages */
+  div.ng-invalid.ng-touched {
+    color: red;
+  }
+  
+  /* Styles for the submit button */
+  button {
+    margin-top: 1em;
+    padding: 0.7em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  .error{
+    color: red;
+  }
+  button:enabled {
+    background-color: #1cc210;
+  }
+  button:enabled:hover {
+    background-color: #000000; /* Background color on hover */
+}
+  

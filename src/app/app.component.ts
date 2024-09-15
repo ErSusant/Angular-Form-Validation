@@ -1,13 +1,22 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { FormsModule, NgForm } from '@angular/forms';  
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [FormsModule, CommonModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app6';
+  
+  msg: string = "";
+
+  onSubmit(form: NgForm) {
+    console.log(form.value.firstName);
+    console.log(form.value.lastName);
+    console.log(form.value.comment);
+    this.msg = "Contact Form Submitted for " + form.value.firstName;
+  }
 }
